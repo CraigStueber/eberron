@@ -67,6 +67,8 @@ export default function TabsWrappedLabel() {
           />
           <Tab value="two" label="Item Two" {...a11yProps('two')} />
           <Tab value="three" label="Item Three" {...a11yProps('three')} />
+          <Tab value="four" label="Item four" {...a11yProps('four')} />
+          <Tab value="five" label="Item five" {...a11yProps('five')} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index="one">
@@ -77,6 +79,11 @@ export default function TabsWrappedLabel() {
       </TabPanel>
       <TabPanel value={value} index="three">
         Item Three
+      </TabPanel>
+      <TabPanel value={value} index="four">
+        Item four
+      </TabPanel>  <TabPanel value={value} index="five">
+        Item five
       </TabPanel>
     </div>
   );
