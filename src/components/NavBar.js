@@ -7,6 +7,10 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import HomePage from './/HomePage';
+import PageTwo from './/PageTwo';
+import PageThree from './/PageThree';
+import PageFour from './/PageFour';
+import PageFive from './//PageFive';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -76,15 +80,15 @@ export default function TabsWrappedLabel() {
         <HomePage />
       </TabPanel>
       <TabPanel value={value} index="two">
-        Item Two
+        <PageTwo />
       </TabPanel>
       <TabPanel value={value} index="three">
-        Item Three
+       <PageThree />
       </TabPanel>
       <TabPanel value={value} index="four">
-        Item four
+       <PageFour />
       </TabPanel>  <TabPanel value={value} index="five">
-        Item five
+       <PageFive /> 
       </TabPanel>
     </div>
   );
