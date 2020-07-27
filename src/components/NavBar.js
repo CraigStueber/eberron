@@ -6,6 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import HomePage from './/HomePage';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -61,7 +62,7 @@ export default function TabsWrappedLabel() {
         <Tabs value={value} onChange={handleChange} aria-label="wrapped label tabs example">
           <Tab
             value="one"
-            label="New Arrivals in the Longest Text of Nonfiction"
+            label="A Richmond HomeBrew Eberron Game"
             wrapped
             {...a11yProps('one')}
           />
@@ -72,7 +73,7 @@ export default function TabsWrappedLabel() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index="one">
-        Item One
+        <HomePage />
       </TabPanel>
       <TabPanel value={value} index="two">
         Item Two
