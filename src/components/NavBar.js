@@ -6,11 +6,11 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-import HomePage from './/HomePage';
-import PageTwo from './/PageTwo';
-import PageThree from './/PageThree';
-import PageFour from './/PageFour';
-import PageFive from './//PageFive';
+import HomePage from './Pages/HomePage/HomePage';
+import Character from './Pages/CharacterPage/Characters';
+import PageThree from './Pages/WorldPage/World';
+import PageFour from './Pages/NewPaper/CurrentIssue';
+import PageFive from './Pages/RaceChanges/RaceChanges';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -70,7 +70,11 @@ export default function TabsWrappedLabel() {
             wrapped
             {...a11yProps('one')}
           />
-          <Tab value="two" label="Item Two" {...a11yProps('two')} />
+          <Tab 
+            value="two" 
+            label="Characters" 
+            {...a11yProps('two')} 
+          />
           <Tab value="three" label="Item Three" {...a11yProps('three')} />
           <Tab value="four" label="Item four" {...a11yProps('four')} />
           <Tab value="five" label="Item five" {...a11yProps('five')} />
@@ -80,7 +84,7 @@ export default function TabsWrappedLabel() {
         <HomePage />
       </TabPanel>
       <TabPanel value={value} index="two">
-        <PageTwo />
+        <Character />
       </TabPanel>
       <TabPanel value={value} index="three">
        <PageThree />
