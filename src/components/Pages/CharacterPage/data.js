@@ -128,7 +128,7 @@ export const characterData = [
         Bio: "A Mind-Flayer Mob BOSS.... Come on what is cooler than that."
   
       },
-      {id: 15,
+      {id: 17,
         name: "Pattie",
         type: "NPC",
         race: "Were-Bear/Human",
@@ -136,7 +136,7 @@ export const characterData = [
         Bio: "Pattie was a player favorite that helped them escape from sharn. And in return they helped Pattie and John break the curse and find peace... Even though that meant Pattie and John left this world."
   
       },
-      {id: 16,
+      {id: 18,
         name: "John",
         type: "NPC",
         race: "Human",

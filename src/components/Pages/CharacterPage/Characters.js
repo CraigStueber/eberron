@@ -10,10 +10,11 @@ const Character = () => {
   const[searchText, setSearchText] =  useState('');
 
   const handleSearch = event => {
-    setSearchText(event.target.value);
+    setSearchText( event.target.value);
+    
   }
   const filteredCharacters = characterData.filter( character => {
-    return character.name.includes(searchText) || character.race.includes(searchText) || character.campaign.includes(searchText) || character.type.includes(searchText)
+    return character.name.includes(searchText) || character.campaign.includes(searchText) || character.type.includes(searchText)
   })
 
  return (
