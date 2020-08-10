@@ -4,6 +4,7 @@ import Search from './Search';
 import {characterData} from './data';
 
 
+
 const Character = () => {
 
   const[searchText, setSearchText] =  useState('');
@@ -18,7 +19,7 @@ const Character = () => {
  return (
     <div >
     <Search value={searchText} onSearch={handleSearch} />
-    <Characterlist characterData = {filteredCharacters} />
+    <Characterlist className="card" characterData = {filteredCharacters} />
     </div>
   );
 }
