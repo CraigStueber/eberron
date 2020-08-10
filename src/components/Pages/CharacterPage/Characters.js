@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Characterlist from './Character_list';
 import Search from './Search';
 import {characterData} from './data';
+import "./character.style.scss";
 
 
 
@@ -20,7 +21,7 @@ const Character = () => {
  return (
     <div >
     <Search value={searchText} onSearch={handleSearch} />
-    <Characterlist className="card" characterData = {filteredCharacters} />
+    <Characterlist  characterData = {filteredCharacters} />
     </div>
   );
 }
