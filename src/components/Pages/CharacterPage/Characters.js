@@ -5,7 +5,6 @@ import {characterData} from './data';
 import "./character.style.scss";
 
 
-
 const Character = () => {
 
   const[searchText, setSearchText] =  useState('');
@@ -15,7 +14,7 @@ const Character = () => {
     
   }
   const filteredCharacters = characterData.filter( character => {
-    return character.name.includes(searchText) || character.campaign.includes(searchText) || character.type.includes(searchText)
+    return character.name.toLowerCase().includes(searchText.toLowerCase()) || character.campaign.toLowerCase().includes(searchText.toLowerCase()) || character.type.toLowerCase().includes(searchText.toLowerCase())
   })
 
  return (

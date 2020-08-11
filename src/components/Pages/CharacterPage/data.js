@@ -41,7 +41,7 @@ export const characterData = [
   
       },
       {id: 6,
-        name: "Jim Boo",
+        name: "Jimbo",
         type: "Player Character",
         race: "BugBear",
         campaign: "Phillie",
