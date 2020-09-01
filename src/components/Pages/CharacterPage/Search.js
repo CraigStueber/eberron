@@ -7,7 +7,7 @@ const Search = ({value, onSearch }) => (
     <label htmlFor="searchInput">Search: </label>
     <input id="searchInput" 
             type="text" 
-            placeholder ="Search by Character Name, Campaign, or type"
+            placeholder ="Search Name or Campaign"
             value = {value}
              onChange={onSearch}/> 
              </div>
