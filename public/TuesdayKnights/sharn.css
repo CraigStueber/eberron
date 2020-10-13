@@ -1,0 +1,110 @@
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+nav {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 4rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: .2em 2em;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: .2em .7em;
+}
+
+nav a {
+  width: 100%;
+  height: 100%;
+  color:  #00fa3e;
+  text-decoration: none;
+  font-family: Ubuntu;
+  font-size: 1.15em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  transition: .25s ease-in-out;
+  font-weight: 500;
+  
+}
+.topHead{
+  font-family: 'Anton', sans-serif;
+}
+
+nav a:hover {
+  color: rgb(220, 120, 0);
+}
+
+
+
+.hide{
+	display: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  background-color: #171f19;
+  color: white;
+  font-family: 'Quattrocento', serif;
+}
+.green{
+  color: #00fa3e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.box{
+  border-bottom: 2px solid grey;
+
+}
+.district{
+  display: block;
+ 
+}
+.topHead{
+  display: inline-block;
+  font-size: 40px;
+}
+.duraPic{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.sharnPic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.link{
+  display: inline-block;
+  float:right;
+  font-size: 40px;
+  color: #00fa3e;
+  border: 1px solid #00fa3e;
+  text-decoration: none;
+}
+.largeImage{
+  width: 100%;
+  margin-top: 10px;
+
+}
+.whereSharn{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
+  margin-top: 10px;
+}
